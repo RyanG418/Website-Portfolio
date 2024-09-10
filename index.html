@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#home" class="logo">
+        Ryan<span> Grant</span>
+      </a>
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button onclick="location.href='#contact'" class="gradient-btn">Contact Me</button>
+    </header>
+    <section class="home" id="home">
+      <div class="home-content">
+        <h1>Hi, It's <span>Ryan</span> </h1>
+        <h3 class="text-animation">
+          I'm a <span></span>
+        </h3>
+        <p>
+          As a recent computer science graduate from UBC Okanagan, I am seeking full time employment as a full stack developer where I can learn new skills, gain experience, and make a positive contribution to your company.   
+        </p>
+        <div class="social-icons">
+          <a href="https://github.com/RyanG418">
+            <i class="bx bxl-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/ryan-grant-32a640306/">
+            <i class="bx bxl-linkedin-square"></i>
+          </a>
+          <!--<a href="#">
+            <i class="bx bxl-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="bx bxl-instagram-alt"></i>
+          </a>-->
+        </div>
+        <div class="btn-group">
+          <a href="#" class="btn">Hire</a>
+          <a href="#contact" class="btn">Contact</a>
+        </div>
+      </div>
+      <div class="home-img">
+        <img src="image.jpg" alt="">
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="image2.jpg" alt="">
+      </div>
+      <div class="about-content">
+        <h2>About <span>Me</span></h2>
+        <p>Hi, I’m Ryan Grant, a recent graduate from the University of British Columbia with a Bachelor of Science in Computer Science. I’m passionate about technology and eager to kickstart my career in the tech industry. Although I’m new to the professional field, I’ve developed strong skills in programming languages like JavaScript, Java, Python, C++, and SQL.
+        </p>
+        <br>
+        <p>
+          When I’m not coding, I enjoy playing a variety of video game genres like MMORPG's, MOBA's and FPS. I'm excited to bring my enthusiasm and technical knowledge to new opportunities. Below you can find some of my technical skills and projects that I've worked on. Feel free to reach out if you have any questions!
+        </p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+    </section>
+    <section class="services" id="services">
+      <h2 class="heading">Services</h2>
+      <div class="services-container">
+        <div class="service-box">
+          <div class="service-info">
+            <i class="bx bx-code-curly"></i>
+            <h4>Backend Development</h4>
+            <p>I have experience in backend development, using a range of technologies to build efficient and scalable solutions. In my capstone project, I utilized Python with AWS Lambda to implement a face-blurring feature for video processing. I also used JavaScript to manage video requests, ensuring smooth functionality and performance. Additionally, I have worked with the .NET framework to develop a calorie-tracking app, which involved building robust backend logic and handling data management.</p>
+          </div>
+        </div>
+        <div class="service-box">
+          <div class="service-info">
+            <i class="bx bx-code"></i>
+            <h4>Frontend Development</h4>
+            <p>I have a strong foundation in frontend development, with proficiency in writing HTML and CSS to build responsive and accessible web interfaces. I am experienced in using Figma for designing and prototyping user interfaces, ensuring a smooth transition from concept to implementation. My skills were further honed during an 8-month capstone project focused on React.js for the frontend, where I developed dynamic, interactive user experiences and applied modern web development best practices.</p>
+          </div>
+        </div>
+        <div class="service-box">
+          <div class="service-info">
+            <i class="bx bxs-data"></i>
+            <h4>Database Management</h4>
+            <p>I have solid experience in database management, including writing complex SQL queries for data retrieval and manipulation. I am skilled in integrating databases with various applications and managing data storage solutions to ensure efficiency, security, and reliability. My work has involved designing and optimizing database structures to support dynamic, data-driven applications.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="projects" id="projects">
+
+      <h2 class="heading">Projects</h2>
+      <div class="projects-box">
+        <div class="project-card">
+          <img src="project1.png" alt="">
+          <h3>UBC Capstone Project</h3>
+          <p>
+            During my 8-month capstone project at UBC, I worked on building a serverless video-sharing platform using AWS services. Sponsored by a faculty member, the project had specific requirements and aimed to leverage the scalability and flexibility of cloud computing. As part of a team of five, we collaborated closely through all phases of the project, from initial design to final deployment, using daily stand-ups and agile methodologies to ensure continuous progress. We relied on GitHub for source control and managed our CI/CD pipeline to maintain a seamless development workflow and deliver a high-quality product.
+          </p>
+          <div class="btn">Review Project</div>
+        </div>
+        <div class="project-card">
+          <img src="project2.png" alt="">
+          <h3>Calorie Tracking App</h3>
+          <p>I developed a calorie counting app using C# and the .NET framework, with SQL database integration to efficiently manage and store user data. Designed in Figma, the app was created for both desktop and iOS platforms to provide a seamless user experience across devices. Key features of the app include item tracking, detailed macronutrient information, and visual progress indicators through graphs and charts, allowing users to easily monitor their dietary habits and progress toward their fitness goals.</p>
+          <div class="btn">Review Project</div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me</span></h2>
+
+      <form action="https://formsubmit.co/el/revuvo" method="POST">
+        <div class="input-group">
+          <div class="input-box">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="text" placeholder="Full Name">
+              <input type="email" name="email" placeholder="Email">
+          </div>
+          <div class="input-box">
+              <input type="number" placeholder="Phone Number">
+              <input type="text" name="_subject" placeholder="Subject">
+          </div>
+        </div>
+        <div class="input-group-2">
+          <textarea name="" id="" placeholder="Your Message" cols="30" rows="10"></textarea>
+          <input type="hidden" name="_autoresponse" value="Thanks for your message! I'll respond ASAP. -Ryan Grant">
+          <input type="Submit" value="Send Message" class="btn">
+        </div>
+      </form>
+    </section>
+    <footer class="footer">
+      <div class="social-icons">
+        <a href="https://github.com/RyanG418">
+          <i class="bx bxl-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ryan-grant-32a640306/">
+          <i class="bx bxl-linkedin-square"></i>
+        </a>
+        <!--<a href="#">
+          <i class="bx bxl-twitter"></i>
+        </a>
+        <a href="#">
+          <i class="bx bxl-instagram-alt"></i>
+        </a> -->
+      </div>
+    <ul class="list">
+      <li>
+        <a href="#">FAQ</a>
+      </li>
+      <li>
+        <a href="#services">Services</a>
+      </li>
+      <li>
+        <a href="#about">About Me</a>
+      </li>
+      <li>
+        <a href="#projects">Projects</a>
+      </li>
+      <li>
+        <a href="#contact">Contacts</a>
+      </li>
+      <p class="copyright">
+        © Ryan Grant | All Rights Reserved
+      </p>
+    </ul>
+  </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
