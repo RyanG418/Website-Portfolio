@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  </head>
+  <body>
+    <header class="header" id="projectHeader">
+      <a href="../#home" class="logo">
+        Ryan<span> Grant</span>
+      </a>
+      <i class="bx bx-menu" id="menu-icon"></i> 
+      <nav class="navbar">
+        <a href="../#home">Home</a>
+        <a href="../#about">About</a>
+        <a href="../#services">Services</a>
+        <a href="../#projects">Projects</a>
+        <a href="../#contact">Contact</a>
+      </nav>
+      <button onclick="location.href='../#contact'" class="gradient-btn">Contact Me</button>
+    </header>
+    <section class="projects" id="projectsPage">
+        <div class="tab-list">
+            <button id="tab1-button" onclick="switchTab('tab1')">UBC Capstone</button>
+            <button id="tab2-button" onclick="switchTab('tab2')">Calorie Tracking app</button>
+        </div>
+        <div id="tab1" class="tab">
+            <div class="project-card">
+                <img src="../project1.png" alt="">
+                <h3>UBC Capstone Project</h3>
+                <p>
+                  During my 8-month capstone project at UBC, I worked on building a serverless video-sharing platform using AWS services. Sponsored by a faculty member, the project had specific requirements and aimed to leverage the scalability and flexibility of cloud computing. As part of a team of five, we collaborated closely through all phases of the project, from initial design to final deployment, using daily stand-ups and agile methodologies to ensure continuous progress. We relied on GitHub for source control and managed our CI/CD pipeline to maintain a seamless development workflow and deliver a high-quality product.
+                </p>
+            </div>
+        </div>
+        <div id="tab2" class="tab">
+            <div class="project-card">
+                <img src="../project2.png" alt="">
+                <h3>Calorie Tracking App</h3>
+                <p>I developed a calorie counting app using C# and the .NET framework, with SQL database integration to efficiently manage and store user data. Designed in Figma, the app was created for both desktop and iOS platforms to provide a seamless user experience across devices. Key features of the app include item tracking, detailed macronutrient information, and visual progress indicators through graphs and charts, allowing users to easily monitor their dietary habits and progress toward their fitness goals.</p>
+                <div onclick="location.href='/projects/index.html?tab=tab2'" class="btn">Review Project</div>
+            </div>
+        </div>
+        <!--<div class="w3-bar w3-black">
+            <button class="w3-bar-item w3-button" onclick="openProject('Capstone')">Capstone</button>
+            <button class="w3-bar-item w3-button" onclick="openProject('CICO')">Nutrition App</button>
+          </div>
+        <div id="Capstone" class="project">
+            <h2>UBC Capstone Project</h2>
+            <p>details about the capstone project</p>
+          </div>
+          
+          <div id="CICO" class="project" style="display:none">
+            <h2>CICO Nutrition app</h2>
+            <p>details about the nutrition app</p>
+          </div>
+        -->
+    </section>
+    <footer class="footer">
+      <div class="social-icons">
+        <a href="https://github.com/RyanG418">
+          <i class="bx bxl-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ryan-grant-32a640306/">
+          <i class="bx bxl-linkedin-square"></i>
+        </a>
+        <!--<a href="#">
+          <i class="bx bxl-twitter"></i>
+        </a>
+        <a href="#">
+          <i class="bx bxl-instagram-alt"></i>
+        </a> -->
+      </div>
+    <ul class="list">
+      <li>
+        <a href="../#home">FAQ</a>
+      </li>
+      <li>
+        <a href="../#services">Services</a>
+      </li>
+      <li>
+        <a href="../#about">About Me</a>
+      </li>
+      <li>
+        <a href="../#projects">Projects</a>
+      </li>
+      <li>
+        <a href="../#contact">Contacts</a>
+      </li>
+      <p class="copyright">
+        © Ryan Grant | All Rights Reserved
+      </p>
+    </ul>
+  </footer>
+    <script src="../script.js"></script>
+  </body>
+</html>

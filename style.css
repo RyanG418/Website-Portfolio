@@ -360,7 +360,6 @@ input::-webkit-inner-spin-button {
 .service-info i{
   font-size: 8rem;
 }
-
 .projects{
   background-color: var(--second-bg-color);
 }
@@ -512,4 +511,48 @@ input::-webkit-inner-spin-button {
   .contact form{
     flex-direction: column;
   }
+}
+.tab-list {
+  display: flex;
+  padding: 2rem 2rem 1rem;
+}
+
+.tab-list button {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid var(--main-color);
+  background-color: black;
+  color: var(--main-color);
+  cursor: pointer;
+  font-size: 1.8rem;
+  transition: 0.3s ease-in-out;
+  font-weight: 600;
+}
+.tab-list button:first-of-type{
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+.tab-list button:last-of-type{
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.tab-list .active {
+  background-color: var(--main-color);
+  font-weight: 600;
+  color: black;
+}
+.tab {
+  display: none;
+  padding: 20px;
+}
+
+.tab.active {
+  display: block;
+}
+#projectHeader{
+  position: static;
+  padding:2rem 4rem;
+}
+#projectsPage{
+  padding:0 10rem;
 }
