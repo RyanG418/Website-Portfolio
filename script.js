@@ -46,3 +46,24 @@ window.onload = function() {
         switchTab('tab1');
     }
 };
+(function() {
+  emailjs.init("kfghvGYR6O-IblvHM"); // Replace with your EmailJS user ID
+})();
+
+// Handle the form submission
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent the default form submission behavior
+
+  const form = this; // Store the form element
+
+  // Send the form data using EmailJS
+  emailjs.sendForm('service_3xn8wps', 'template_2h7khec', form)
+    .then(function() {
+      alert('Message sent successfully!');
+      form.reset(); // Clear the form fields
+    })
+    .catch(function(error) {
+      alert('Failed to send the message, please try again.');
+      console.error('Error:', error);
+    });
+});
