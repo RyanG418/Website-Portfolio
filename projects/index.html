@@ -30,23 +30,76 @@
         <div class="tab-list">
             <button id="tab1-button" onclick="switchTab('tab1')">UBC Capstone</button>
             <button id="tab2-button" onclick="switchTab('tab2')">Calorie Tracking app</button>
+            <button id="tab3-button" onclick="switchTab('tab3')">Panorama Stitching</button>
         </div>
         <div id="tab1" class="tab">
-            <div class="project-card">
-                <img src="../project1.png" alt="">
-                <h3>UBC Capstone Project</h3>
-                <p>
-                  During my 8-month capstone project at UBC, I worked on building a serverless video-sharing platform using AWS services. Sponsored by a faculty member, the project had specific requirements and aimed to leverage the scalability and flexibility of cloud computing. As part of a team of five, we collaborated closely through all phases of the project, from initial design to final deployment, using daily stand-ups and agile methodologies to ensure continuous progress. We relied on GitHub for source control and managed our CI/CD pipeline to maintain a seamless development workflow and deliver a high-quality product.
-                </p>
+            <div class="project-card-2">
+              <h3>UBC Capstone Project</h3>
+              <div class="project-container">
+                <div class="project-group">
+                  <img src="../project1.png" alt="">
+                  <div class="project-lang">
+                    <h1><span>Tech Stack</span></h1>
+                    <p>React.js <br>AWS Services: Lambda, S3, ECR, Rekognition, Amplify, Cloudwatch, CloudFront, Cognito and Route 53  </p>
+                  </div>
+                </div>
+                <div class="project-group">
+                  <p>
+                    During my 8-month capstone project at UBC, I worked on building a serverless video-sharing platform using AWS services. Sponsored by a faculty member, the project had specific requirements and aimed to leverage the scalability and flexibility of cloud computing. As part of a team of five, we collaborated closely through all phases of the project, from initial design to final deployment, using daily stand-ups and agile methodologies to ensure continuous progress. We relied on GitHub for source control and managed our CI/CD pipeline to maintain a seamless development workflow and deliver a high-quality product.
+                  </p>
+                </div>
+              </div>
             </div>
         </div>
         <div id="tab2" class="tab">
-            <div class="project-card">
+          <div class="project-card-2">
+            <h3>Calorie Tracking App</h3>
+            <div class="project-container">
+              <div class="project-group">
                 <img src="../project2.png" alt="">
-                <h3>Calorie Tracking App</h3>
-                <p>I developed a calorie counting app using C# and the .NET framework, with SQL database integration to efficiently manage and store user data. Designed in Figma, the app was created for both desktop and iOS platforms to provide a seamless user experience across devices. Key features of the app include item tracking, detailed macronutrient information, and visual progress indicators through graphs and charts, allowing users to easily monitor their dietary habits and progress toward their fitness goals.</p>
-                <div onclick="location.href='/projects/index.html?tab=tab2'" class="btn">Review Project</div>
+                <div class="project-lang">
+                  <h1><span>Tech Stack</span></h1>
+                  <p>C#, .NET MAUI, SQL </p>
+                </div>
+              </div>
+              <div class="project-group">
+                <p>
+                  I developed a calorie counting app using C# and the .NET framework, with SQL database integration to efficiently manage and store user data. Designed in Figma, the app was created for both desktop and iOS platforms to provide a seamless user experience across devices. Key features of the app include item tracking, detailed macronutrient information, and visual progress indicators through graphs and charts, allowing users to easily monitor their dietary habits and progress toward their nutrition goals.
+                </p>
+              </div>
             </div>
+          </div>
+        </div>
+        <div id="tab3" class="tab">
+          <div class="project-card-2">
+            <h3>Panorama Stitching Using SIFT, RANSAC, and Homography Transformation</h3>
+            <div class="project-container">
+              <div class="project-group">
+                <img src="../project3.png" alt="">
+                <div class="project-lang">
+                  <h1><span>Tech Stack</span></h1>
+                  <p>MatLab, vlfeat toolbox</p>
+
+                </div>
+              </div>
+              <div class="project-group">
+                <h1></h1>
+                
+                <p>This project involves the development of a program designed to automatically create a panoramic image by stitching together multiple input images. The core of the program utilizes advanced computer vision techniques, including the Scale-Invariant Feature Transform (SIFT), Random Sample Consensus (RANSAC), and Homography transformation.</p>
+
+                <h2>Feature Detection with SIFT</h2>
+                <p>The program begins by detecting key features in the input images using the SIFT detector, which identifies distinct points of interest that are invariant to scale, rotation, and illumination changes. SIFT is particularly effective at finding unique points in each image, such as corners, edges, or textured regions, which are crucial for the matching process.</p>
+
+                <h2>Matching with RANSAC</h2>
+                <p>After extracting features from the images, the program uses RANSAC to find high-correspondence points between pairs of images. RANSAC filters out incorrect matches by iteratively selecting subsets of correspondences and fitting a homography to the data. This step ensures that only the most reliable and accurate matches are used for image alignment.</p>
+
+                <h2>Homography Transformation</h2>
+                <p>Once sufficient high-correspondence points are identified, the program computes a homography transformation matrix. This matrix is then applied to warp and align the input images to a common coordinate frame, seamlessly blending them together to form a single panoramic image.</p>
+
+                <p>By combining SIFT for feature detection, RANSAC for robust matching, and homography transformation for image alignment, this program effectively automates the process of panorama creation, producing high-quality results with minimal user input.</p>
+              </div>
+            </div>
+          </div>
         </div>
         <!--<div class="w3-bar w3-black">
             <button class="w3-bar-item w3-button" onclick="openProject('Capstone')">Capstone</button>
