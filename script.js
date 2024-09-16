@@ -67,3 +67,44 @@ document.getElementById('contact-form').addEventListener('submit', function(even
       console.error('Error:', error);
     });
 });
+const article = document.querySelector('.text-animation .article');
+const role = document.querySelector('.text-animation .role');
+
+const words = [
+  "Full-stack Developer",
+  "Web Designer",
+  "Database Developer",
+  "AI Developer",
+  "Software Tester"
+];
+
+function updateArticle(word) {
+  const vowels = ['A', 'E', 'I', 'O', 'U'];
+  article.textContent = vowels.includes(word.trim().charAt(0).toUpperCase()) ? 'an' : 'a';
+}
+
+let index = 0;
+let isFirstAnimation = true;
+
+function setWord() {
+  const currentWord = words[index];
+  role.textContent = currentWord;
+  updateArticle(currentWord);
+  role.classList.add('animate');
+
+  if (isFirstAnimation) {
+    isFirstAnimation = false;
+    setTimeout(() => {
+      index = (index + 1) % words.length;
+      setWord();
+    }, 4000);
+  } else {
+    index = (index + 1) % words.length;
+  }
+}
+
+// Initial setup
+setWord();
+
+// Set interval for subsequent changes
+setInterval(setWord, 4000);

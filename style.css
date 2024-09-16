@@ -119,20 +119,33 @@ section{
     /*margin: 1rem 0;
     font-size: 4rem;*/
 }
-.text-animation{
+.text-animation {
   font-size: 34px;
   font-weight: 600;
-  min-width: 280px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  display: inline-block;
 }
-.text-animation span{
+
+.article {
+  background: none;
+  color: var(--text-color);
+}
+
+.text-animation .role {
   position: relative;
-}
-.text-animation span::before{
-  content:'Full-stack Developer';
   color: var(--main-color);
-  animation: wordlist 20s infinite;
+  opacity: 0;
+  transition: opacity 0.1s;
 }
-.text-animation span::after{
+
+.text-animation .role.animate {
+  opacity: 1;
+}
+
+.text-animation .role::after {
   content: "";
   background-color: var(--bg-color);
   position: absolute;
@@ -140,58 +153,21 @@ section{
   height: 100%;
   border-left: 3px solid var(--bg-color);
   right: -8px;
-  animation: typing 20s steps(14) infinite,cursor 0.6s infinite;
+  animation: typing 20s steps(14) infinite, cursor 0.6s infinite;
 }
-@keyframes cursor{
-  to{
-    border-left: 2px solid var(--main-color);
-  }
-}
-@keyframes wordlist{
-  0%,
-  20%{
-    content: "Full-stack Developer";
-  }
-  21%,
-  40%{
-    content: "Web Designer";
-  }
-  41%,
-  60%{
-    content: "Database Developer";
-  }
-  61%,
-  80%{
-    content: "AI Developer";
-  }
-  81%,
-  100%{
-    content: "Software Tester";
+
+@keyframes cursor {
+  to {
+      border-left: 2px solid var(--main-color);
   }
 }
-@keyframes typing{
-  10%,
-  15%,
-  30%,
-  35%,
-  50%,
-  55%,
-  70%,
-  75%,
-  90%,
-  95%{
-    width: 0;
+
+@keyframes typing {
+  10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
+      width: 0;
   }
-  5%,
-  20%,
-  25%,
-  40%,
-  45%,
-  60%,
-  65%,
-  80%,
-  85%{
-    width: calc(100% + 8px);
+  5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+      width: calc(100% + 8px);
   }
 }
 .home-content p{
@@ -485,13 +461,23 @@ input::-webkit-inner-spin-button {
   display: flex;
   flex-direction: row-reverse;
 }
+.project-container .sml-img{
+  width: 50%;
+}
+.project-container .sml-img-container{
+  display: flex;
+}
 .project-container img{
-  border-radius: 2em;
+  display: flex;
+  flex-direction: row;
+  padding:0.5rem 0;
+  border-radius: 1em;
   width: 100%;
   object-fit: cover;
 }
 .project-group{
   flex:1;
+  flex-direction: row;
   padding: 2rem;
 }
 .project-group p{
