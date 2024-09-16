@@ -4,7 +4,7 @@
   box-sizing: border-box;
   text-decoration: none;
   scroll-behavior: smooth;
-  font-family: "Poppins";
+  font-family: "Rubik";
 }
 :root {
   --bg-color: #080808;
@@ -467,6 +467,14 @@ input::-webkit-inner-spin-button {
   font-size: 1.6rem;
   padding: 1rem;
 }
+.project-card-2 ul{
+  text-align: left;
+  padding:1rem 1rem 0 3rem;
+}
+.project-card-2 li{
+  font-size: 1.6rem;
+  padding: 1rem;
+}
 .project-card-2 h2{
   font-weight: 600;
   font-size: 1.6rem;
@@ -475,7 +483,7 @@ input::-webkit-inner-spin-button {
 }
 .project-container{
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
 }
 .project-container img{
   border-radius: 2em;
