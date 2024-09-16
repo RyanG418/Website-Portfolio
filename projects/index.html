@@ -37,7 +37,7 @@
               <h3>UBC Capstone Project</h3>
               <div class="project-container">
                 <div class="project-group">
-                  <img src="../project1.png" alt="">
+                  <img src="../images/projects/project1.png" alt="">
                   <div class="project-lang">
                     <h1><span>Tech Stack</span></h1>
                     <p>React.js <br>AWS Services: Lambda, S3, ECR, Rekognition, Amplify, Cloudwatch, CloudFront, Cognito and Route 53  </p>
@@ -45,8 +45,16 @@
                 </div>
                 <div class="project-group">
                   <p>
-                    During my 8-month capstone project at UBC, I worked on building a serverless video-sharing platform using AWS services. Sponsored by a faculty member, the project had specific requirements and aimed to leverage the scalability and flexibility of cloud computing. As part of a team of five, we collaborated closely through all phases of the project, from initial design to final deployment, using daily stand-ups and agile methodologies to ensure continuous progress. We relied on GitHub for source control and managed our CI/CD pipeline to maintain a seamless development workflow and deliver a high-quality product.
-                  </p>
+                    During my 8-month capstone project at UBC, I contributed to the development of a serverless video-sharing platform utilizing AWS services, sponsored by a faculty member. The project aimed to leverage the scalability and flexibility of cloud computing, meeting specific requirements for both functionality and performance. As part of a team of five, we collaborated throughout all project phases—design, implementation, testing, and deployment—following agile methodologies with daily stand-ups to ensure steady progress. We implemented both unit testing and integration testing to ensure robustness, and relied on GitHub for source control, with a CI/CD pipeline maintaining a seamless workflow for high-quality deliverables.
+                </p>
+                <h2>Technical Details</h2>
+                <ul>
+                    <li><strong>Storage & Delivery:</strong> Videos were stored in AWS S3 and displayed through CloudFront.</li>
+                    <li><strong>Video Blurring Pipeline:</strong> The face-blurring functionality was a multi-step process managed via AWS Lambda Step Functions. We used AWS Rekognition for face detection (providing locations and timestamps) and an EC2 container with OpenCV for applying the blur. Lambda functions handled the file transfers throughout the process.</li>
+                    <li><strong>Frontend & Backend Integration:</strong> AWS Amplify bridged our React.js frontend with backend services, while AWS Cognito managed user authentication and data storage.</li>
+                    <li><strong>GraphQL API:</strong> Used to manage relationships between users, videos, and requests, allowing for efficient querying and data management across the platform.</li>
+                    <li><strong>Testing:</strong> We incorporated both unit testing and integration testing to ensure functionality. Cypress.js was used for unit tests.</li>
+                </ul>
                 </div>
               </div>
             </div>
@@ -56,7 +64,7 @@
             <h3>Calorie Tracking App</h3>
             <div class="project-container">
               <div class="project-group">
-                <img src="../project2.png" alt="">
+                <img src="../images/projects/project2.png" alt="">
                 <div class="project-lang">
                   <h1><span>Tech Stack</span></h1>
                   <p>C#, .NET MAUI, SQL </p>
@@ -75,7 +83,7 @@
             <h3>Panorama Stitching Using SIFT, RANSAC, and Homography Transformation</h3>
             <div class="project-container">
               <div class="project-group">
-                <img src="../project3.png" alt="">
+                <img src="../images/projects/project3.png" alt="">
                 <div class="project-lang">
                   <h1><span>Tech Stack</span></h1>
                   <p>MatLab, vlfeat toolbox</p>
