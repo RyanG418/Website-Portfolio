@@ -106,6 +106,9 @@ section{
   align-items: flex-end;
   text-align: right;
 }
+.credly-container{
+  margin-top: 3rem;
+}
 .home-content h1{
   font-size: 8rem;
   font-weight: 700;
